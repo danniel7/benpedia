@@ -1,2 +1,2 @@
 # benpedia
-Some code files for benpedia.miraheze.org
+Some code files of JS gadgets for benpedia.miraheze.org
