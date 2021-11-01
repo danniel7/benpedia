@@ -1,0 +1,20 @@
+// Añade un botón para purgar la caché de cualquier página.
+
+/**
+ * Action link: Purge (Action menu)
+ *
+ * @source: www.mediawiki.org/wiki/Snippets/Purge_action
+ * @rev: 6
+ */
+$(document).ready( function () {
+    if ( !$( '#ca-purge' ).length && mw.config.get( 'wgIsArticle' ) ) {
+        mw.util.addPortletLink(
+            'p-cactions',
+            mw.util.wikiScript() + '?' + $.param({ title: mw.config.get( 'wgPageName' ), action: 'purge' }),
+            mw.config.get( 'skin' ) === 'vector' ? 'purgar' : '*',
+            'ca-purge',
+            'purgar la caché de la página',
+            '*'
+        );
+    }
+} );
