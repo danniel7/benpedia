@@ -1,0 +1,10 @@
+// Agrega una herramienta para biscar las subpáginas de la página actual.
+
+//Artículo, categoría, especial
+if ( mw.config.get( 'wgNamespaceNumber' ) > 0 && $.inArray( mw.config.get( 'wgNamespaceNumber' ), [ 14, 104 ] ) == -1 ) {
+  $( function() {
+      mw.util.addPortletLink( 'p-tb',
+          mw.config.get( 'wgScript' ) + '?title=Especial:PáginasPorPrefijo' + '/' + mw.config.get( 'wgPageName' ) + '/',
+          'Buscar subpáginas', 't-subpaginas', 'buscar subpáginas' );
+  });
+}
