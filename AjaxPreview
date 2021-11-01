@@ -1,0 +1,2 @@
+//AjaxPreview permite previsualizar el contenido de una página, sin necesidad de recargarla.
+mw.loader.load('//en.wikipedia.org/w/index.php?title=User:Js/ajaxPreview.js&action=raw&ctype=text/javascript');
