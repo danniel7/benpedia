@@ -1,0 +1,4 @@
+// Resaltador de sintaxis. Hace que la sintaxis resalte coloridamente en la caja de edición. Funciona casi siempre en los navegadores de Mozilla Firefox, y en menor medida en los de Opera y Google Chrome, en ese orden. Consulte los errores conocidos.
+No se debería usar junto con la función de ampliación de página del navegador.
+
+mw.loader.load('//www.mediawiki.org/w/index.php?title=MediaWiki:Gadget-DotsSyntaxHighlighter.js&action=raw&ctype=text/javascript&smaxage=21600&maxage=86400');
